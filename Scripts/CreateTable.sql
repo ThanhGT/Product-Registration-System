@@ -1,0 +1,16 @@
+﻿CREATE TABLE Product (
+	ProductID INTEGER PRIMARY KEY,
+	ProductName NVARCHAR(50) NOT NULL,
+	Price DECIMAL(8, 2) NOT NULL,
+	CategoryID INTEGER NOT NULL
+);
+
+CREATE TABLE Category (
+	CategoryID INTEGER PRIMARY KEY,
+	CategoryName VARCHAR(30) NOT NULL 
+);
+
+DROP TABLE Product
+DROP TABLE Category
+
+ALTER TABLE Product ADD FOREIGN KEY (CategoryID) REFERENCES Category(CategoryID);

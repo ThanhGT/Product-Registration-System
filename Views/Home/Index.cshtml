@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null; // "_Layout build in layout my MS"
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <title>Welcome</title>
+</head>
+
+<body class="text-center p-2">
+    <div>
+        <h4>@ViewBag.Title<br /></h4>
+    </div>
+
+    <!-- direct to razer page -->
+    <a asp-action="ProductForm">Register Products</a>
+    <a asp-action="CategoryForm">Register Category</a>
+    <a asp-action="ProductSummary">Product Summary</a>
+    <footer>
+        TT's Web API Product Registration System
+    </footer>
+</body>
+</html>
